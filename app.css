@@ -46,7 +46,7 @@ NAV STYLES
 .spotify__container--is-desktop.spotify__os--is-windows
   .global-nav
   .Root__globalNav {
-  --top-bar-padding-start: calc(64px / var(--zoom));
+  --top-bar-padding-start: calc(128px / var(--zoom));
   --top-bar-padding-end: calc(144px / var(--zoom));
 }
 
@@ -2626,3 +2626,4 @@ EXTENSION-SPECIFIC TWEAKS
 .main-nowPlayingBar-extraControls > button.main-nowPlayingBar-lyricsButton:not([data-testid="lyrics-button"]) {
   display: flex !important;
 }
+
