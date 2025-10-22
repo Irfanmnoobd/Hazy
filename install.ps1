@@ -45,9 +45,9 @@ if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
 
   # Clone to .spicetify.
   Write-Part "DOWNLOADING    "; Write-Emphasized $sp_dot_dir
-  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Astromations/Hazy/main/color.ini" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\color.ini"
-  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Astromations/Hazy/main/user.css" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\user.css"
-  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Astromations/Hazy/main/theme.js" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\theme.js"
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Irfanmnoobd/Hazy/main/color.ini" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\color.ini"
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Irfanmnoobd/Hazy/main/user.css" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\user.css"
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Irfanmnoobd/Hazy/main/theme.js" -UseBasicParsing -OutFile "$sp_dot_dir\Hazy\theme.js"
   Write-Done
 
   # Installing.
@@ -66,3 +66,4 @@ else {
   Write-Part "`nYour Powershell version is less than "; Write-Emphasized "$PSMinVersion";
   Write-Part "`nPlease, update your Powershell downloading the "; Write-Emphasized "'Windows Management Framework'"; Write-Part " greater than "; Write-Emphasized "$PSMinVersion"
 }
+
